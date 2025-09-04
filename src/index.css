@@ -3,6 +3,7 @@
 body {
   @apply text-white;
   font-family: "Space Grotesk", sans-serif;
+  outline: none;
 }
 
 .container {
@@ -13,6 +14,19 @@ body {
 }
 .btn {
   @apply px-4 py-2 rounded-4xl  cursor-pointer transition-all duration-300;
+}
+
+.rooms-label {
+  @apply p-2 font-semibold;
+}
+.rooms-container {
+  @apply flex flex-col w-full;
+}
+.rooms-input {
+  @apply bg-gray-200 px-2 py-3 rounded-xl shadow-sm outline-0;
+}
+.filter-btn {
+  @apply bg-transparent border-1 border-gray-400 text-gray-400 px-3 rounded-3xl hover:text-black hover:bg-gray-400 transition-all duration-300 cursor-pointer;
 }
 
 .font-dancing {
