@@ -1,11 +1,16 @@
 import { useState } from "react";
 
 import "./App.css";
+import Home from "./components/Home";
 
 function App() {
   const [count, setCount] = useState(0);
 
-  return <></>;
+  return (
+    <div className="overflow-hidden ">
+      <Home />
+    </div>
+  );
 }
 
 export default App;

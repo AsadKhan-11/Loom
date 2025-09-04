@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+body {
+  @apply text-white;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.container {
+  @apply p-5 mx-auto;
+}
+.links {
+  @apply hover:text-black hover:bg-white;
+}
+.btn {
+  @apply px-4 py-2 rounded-4xl  cursor-pointer transition-all duration-300;
+}
+
+.font-dancing {
+  font-family: "Dancing Script", sans-serif;
+}
