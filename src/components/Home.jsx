@@ -1,11 +1,17 @@
 import React from "react";
-import house1 from "../assets/house1.jpg";
-import house2 from "../assets/house2.jpg";
-import house3 from "../assets/house3.png";
-import house4 from "../assets/house4.png";
+
 import house5 from "../assets/house5.jpg";
 import Nav from "./Nav";
 const Home = () => {
+  const filters = ["City", "House", "Residential", "Apartment"];
+
+  const fields = [
+    { label: "Looking for", type: "text", placeholder: "Enter type" },
+    { label: "Pricing", type: "number", placeholder: "Enter Price" },
+    { label: "Location", type: "text", placeholder: "Location" },
+    { label: "Bedrooms", type: "number", placeholder: "2 Bedrooms" },
+  ];
+
   return (
     <div
       className="h-screen  w-full bg-cover bg-center"
@@ -31,51 +37,31 @@ const Home = () => {
 
           {/* rooms inputs */}
 
-          <div className="flex justify-between  gap-5 pb-4 w-full ">
-            <div className="rooms-container">
-              <label className="rooms-label">Looking for</label>
-              <input
-                type="text"
-                placeholder="Enter type"
-                className="rooms-input"
-              />
-            </div>
-            <div className="rooms-container">
-              <label className="rooms-label">Pricing</label>
-              <input
-                type="number"
-                placeholder="Enter Price"
-                className="rooms-input"
-              />
-            </div>
-            <div className="rooms-container">
-              <label className="rooms-label">Location</label>
-              <input
-                type="text"
-                placeholder="Location"
-                className="rooms-input"
-              />
-            </div>
-            <div className="rooms-container">
-              <label className="rooms-label">Bedrooms</label>
-              <input
-                type="number"
-                placeholder="2 Bedrooms"
-                className="rooms-input"
-              />
-            </div>
+          <div className="flex flex-wrap gap-5 pb-4 w-full">
+            {fields.map((f, i) => (
+              <div key={i} className="rooms-container min-w-[200px] flex-1">
+                <label className="rooms-label">{f.label}</label>
+                <input
+                  type={f.type}
+                  placeholder={f.placeholder}
+                  className="rooms-input"
+                />
+              </div>
+            ))}
           </div>
+
           {/* filter for rooms */}
-          <div className="flex justify-between w-full">
-            <div className="flex gap-3 ">
+          <div className="flex justify-between w-full flex-wrap">
+            <div className="flex gap-3 flex-wrap">
               <label className="rooms-label">Filters:</label>
-              <button className="filter-btn">City</button>
-              <button className="filter-btn">House</button>
-              <button className="filter-btn">Residential</button>
-              <button className="filter-btn">Apartment</button>
+              {filters.map((filter, i) => (
+                <button key={i} className="filter-btn">
+                  {filter}
+                </button>
+              ))}
             </div>
 
-            <button className="btn bg-black text-white">
+            <button className="btn bg-black text-white mt-3 md:mt-0">
               Search properties
             </button>
           </div>
