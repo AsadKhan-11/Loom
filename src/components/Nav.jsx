@@ -41,16 +41,16 @@ const Nav = () => {
             </button>
 
             <ul className="flex flex-col items-center space-y-6 text-xl mt-16">
-              <li className="hover:text-red-600 transition-all duration-300 cursor-pointer  text-center">
+              <li className=" transition-all duration-300 cursor-pointer  text-center">
                 <a href="#home"> Home </a>
               </li>
-              <li className="hover:text-red-600 transition-all duration-300 cursor-pointer  text-center">
+              <li className=" transition-all duration-300 cursor-pointer  text-center">
                 <a href="#about"> About Us </a>
               </li>
-              <li className="hover:text-red-600 transition-all duration-300 cursor-pointer  text-center">
+              <li className=" transition-all duration-300 cursor-pointer  text-center">
                 <a href="#property"> Property </a>
               </li>
-              <li className="hover:text-red-600 transition-all duration-300 cursor-pointer  text-center">
+              <li className=" transition-all duration-300 cursor-pointer  text-center">
                 <a href="#contact"> Contact Us</a>
               </li>
             </ul>
