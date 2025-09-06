@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-  @apply p-5 mx-auto;
+  @apply lg:p-2.5 p-5 mx-auto;
 }
 .links {
   @apply hover:text-black hover:bg-white;

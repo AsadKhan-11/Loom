@@ -1,11 +1,9 @@
-import { BiRightArrow, BiSolidRightArrow } from "react-icons/bi";
 import house1 from "../assets/house1.jpg";
 import house2 from "../assets/house2.jpg";
 import house3 from "../assets/house3.png";
 import house4 from "../assets/house4.png";
 import house5 from "../assets/house5.jpg";
 import { FaArrowRight } from "react-icons/fa";
-import { div } from "framer-motion/client";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -20,8 +18,8 @@ const Glowup = () => {
           Your home deserves the glow-up too
         </h2>
 
-        <div className="grid grid-cols-4 grid-rows-4 gap-4 font-epunda">
-          <div className="relative col-span-2 row-span-4 rounded-4xl overflow-hidden h-[500px] transition-all duration-300">
+        <div className="grid grid-cols-4 grid-rows-4 lg:grid-rows-4 gap-4 font-epunda">
+          <div className="relative lg:col-span-2 col-span-4 row-span-2 lg:row-span-4 rounded-4xl overflow-hidden  transition-all duration-300">
             <AnimatePresence mode="wait">
               <motion.img
                 key={img}
@@ -36,7 +34,7 @@ const Glowup = () => {
             </AnimatePresence>
 
             {/* Thumbnails */}
-            <div className="rounded-xl absolute z-50 right-0 bottom-0 w-auto p-2 m-3 flex gap-2.5 bg-white">
+            <div className="rounded-4xl absolute z-50 right-0 bottom-0 w-auto p-2 m-3 flex gap-2.5 bg-white">
               {houses.map((house, index) => (
                 <div
                   key={index}
@@ -56,7 +54,7 @@ const Glowup = () => {
               ))}
             </div>
           </div>
-          <div className="col-start-3 col-span-1 text-center row-span-3 bg-gray-100 rounded-4xl flex flex-col items-center justify-center gap-4 py-5 px-4">
+          <div className="lg:col-start-3 lg:col-span-1 col-start-1 col-span-2 text-center row-span-2 lg:row-span-3 bg-gray-100 rounded-4xl flex flex-col items-center justify-center gap-4 py-5 px-4">
             <h3 className="text-2xl font-semibold">
               {" "}
               Great beginnings are built in humble spaces.
@@ -68,7 +66,7 @@ const Glowup = () => {
             </p>
             <button className=" btn border-1 border-gray-200">Details</button>
           </div>
-          <div className="pb-4 col-start-4 col-span-1 row-span-3 bg-gray-100 rounded-4xl flex flex-col gap-5 items-center ">
+          <div className="pb-4 lg:col-start-4 lg:col-span-1  col-start-3 col-span-2 text-center row-span-2 lg:row-span-3 bg-gray-100 rounded-4xl flex flex-col gap-5 items-center ">
             <div className="rounded-4xl overflow-hidden ">
               <img
                 src={house2}
@@ -76,12 +74,12 @@ const Glowup = () => {
                 className="w-full h-full object-cover"
               />
             </div>{" "}
-            <p>Pricing Start at $250K</p>
+            <p className=""> Pricing Start at $250K</p>
             <button className="btn bg-black text-white flex gap-1.5 items-center">
               Explore Properties <FaArrowRight />
             </button>
           </div>
-          <div className="col-start-3 col-span-2 start-row-4 text-gray-700 rounded-4xl flex items-center justify-center p-3">
+          <div className="bg-gray-100  col-start-1 lg:col-start-3 col-span-full lg:col-span-2 start-row-4 text-gray-700 rounded-4xl flex items-center justify-center p-3">
             We don’t just build structures — we shape lifestyles. Every project
             is a landmark of quality, innovation, and trust
           </div>
