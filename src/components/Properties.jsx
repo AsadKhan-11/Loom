@@ -103,7 +103,7 @@ const Properties = () => {
                 <h3 className="text-xl font-semibold text-[#121212] mb-2">
                   {property.title}
                 </h3>
-                <div className="flex gap-4">
+                <div className="flex gap-4 items-center">
                   <p className="text-black font-bold">{property.price}</p>
                   <p className="text-gray-500 mb-1">{property.street}</p>
                 </div>
