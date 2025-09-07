@@ -4,6 +4,7 @@ import "./App.css";
 import Home from "./components/Home";
 import Glowup from "./components/Glowup";
 import Stats from "./components/Stats";
+import Properties from "./components/Properties";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -13,6 +14,7 @@ function App() {
       <Home />
       <Glowup />
       <Stats />
+      <Properties />
     </div>
   );
 }

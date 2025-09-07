@@ -14,12 +14,12 @@ const Glowup = () => {
   return (
     <div className="bg-[#fcfcfcf6] mt-16 mb-8 ">
       <div className="text-[#121212]  container space-y-7">
-        <h2 className="  text-5xl max-w-[600px] ">
+        <h2 className="  text-5xl max-w-[600px] pb-6 ">
           Your home deserves the glow-up too
         </h2>
 
         <div className="grid grid-cols-4 grid-rows-4 lg:grid-rows-4 gap-4 font-epunda">
-          <div className="relative lg:col-span-2 col-span-4 row-span-2 lg:row-span-4 rounded-4xl overflow-hidden  transition-all duration-300">
+          <div className="relative  sm:h-[400px] lg:h-[500px] lg:col-span-2 col-span-4 row-span-2 lg:row-span-4 rounded-4xl overflow-hidden  transition-all duration-300">
             <AnimatePresence mode="wait">
               <motion.img
                 key={img}
