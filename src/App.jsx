@@ -6,6 +6,7 @@ import Glowup from "./components/Glowup";
 import Stats from "./components/Stats";
 import Properties from "./components/Properties";
 import Testimonials from "./components/Testimonials";
+import Contact from "./components/Contact";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -17,6 +18,7 @@ function App() {
       <Stats />
       <Properties />
       <Testimonials />
+      <Contact />
     </div>
   );
 }
