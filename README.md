@@ -1,6 +1,6 @@
 # <h1 align="center">Real Estate Agency </h1>
 
-![Loom](https://github.com/AsadKhan-11/loom/assets/Landing.png)
+![Loom](https://github.com/user-attachments/assets/ec4ce66c-9a89-47a2-86c2-0989a64bbfcc)
 
 ## Technologies
 
